@@ -28,6 +28,8 @@ function loadUser() {
 function loadUsers() {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'users.json', true);
+    // Nota: onload() es la función llamada cuando una trasacción XMLHttpRequest 
+    //                 es completada satisfactoriamente.
     xhr.onload = function() {
         if(this.status == 200){
             console.log(this.responseText);
